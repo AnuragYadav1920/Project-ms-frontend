@@ -1,0 +1,16 @@
+import React from 'react'
+
+const About = () => {
+  return (
+    <>
+    <div className='container pb-8'>
+      <div className='font-thin text-md text-gray-400 py-8'>About Us /</div>
+      <div className='font-normal text-lg text-gray-400 py-8'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, incidunt. Autem ratione perferendis fuga expedita sequi pariatur? Quam eligendi vero, suscipit modi eum ducimus provident ratione itaque quos consequuntur amet reiciendis expedita cupiditate nesciunt voluptate temporibus maxime est porro! Sed dolor ipsa quo tempore autem porro corporis dolorem vitae repellendus quia reprehenderit veniam eaque soluta optio ea fuga, in ab non error! Doloremque quis velit consequuntur tenetur perferendis dolores, vel adipisci molestiae cumque quam, voluptas recusandae ab sunt! Vitae in eveniet nostrum esse ut magni officia? Repudiandae quos optio maiores, perferendis cum rem ducimus? Dolorem error quisquam adipisci maiores dolores reiciendis consequatur quae magni, provident perspiciatis voluptatum deleniti ab, reprehenderit ullam ipsum! Non quia quod doloribus voluptatibus harum officiis aliquid, alias iusto cumque iste sunt, commodi, reiciendis ea eligendi odio! Rem, voluptatibus eius repellat obcaecati temporibus autem nemo nisi culpa voluptatem? Velit voluptas deserunt ex consequatur repellendus eligendi, nostrum in autem obcaecati harum, ad modi, non blanditiis nulla ullam magnam dignissimos eaque? Molestias atque laborum mollitia eligendi asperiores saepe animi aperiam, delectus nisi sit nostrum laudantium velit maxime quibusdam ipsa quae voluptates incidunt? Aspernatur ut distinctio, ipsam, tempora delectus, non porro culpa mollitia enim a quis veritatis molestiae minima. Nemo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, omnis. Eius, obcaecati voluptatem. Sit consectetur explicabo dolorum reprehenderit veritatis cumque nostrum obcaecati ipsa corrupti laudantium molestiae, aliquam placeat reiciendis ut maiores dignissimos repellat, iste recusandae consequuntur. Officia iure voluptatibus numquam magni maxime minima porro rerum consequatur distinctio minus! Possimus tenetur a repudiandae nostrum commodi deserunt, consequuntur laudantium repellendus, voluptas magni natus corporis, ducimus animi non fuga saepe? Doloribus, quae dicta non neque vitae provident in quas excepturi sint facere blanditiis soluta nam ratione eius sed ullam et rerum commodi cum! Vel similique ipsa natus rerum maiores animi nesciunt enim a. Magnam rem quis veniam! Nulla odit qui alias veniam commodi accusamus. Molestias veniam id voluptatum voluptatibus, velit expedita fugit beatae enim minus esse a maxime dolore distinctio corporis quo nam amet autem. Explicabo, fugiat. Ea, ratione! Velit autem corporis blanditiis nesciunt nisi quaerat reiciendis! Nam veritatis cupiditate nulla vel molestiae dolore saepe alias obcaecati. Deleniti excepturi consequatur alias optio sunt enim accusamus officiis in dolores quod odit, inventore autem consectetur laudantium repellendus hic ipsum quae doloremque minima incidunt quisquam earum ut est! Voluptas dignissimos iste, rerum, sed libero cumque laborum aperiam magni error accusamus, ad asperiores minima nisi non maxime!
+      </div>
+    </div>
+    </>
+  )
+}
+
+export default About
