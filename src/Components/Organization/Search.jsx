@@ -10,7 +10,7 @@ const Search = () => {
           <div className="search-box space-y-8 w-2/3 mx-auto min-h-96 bg-yellow-600 content-center font-thin">
             <div className="search-select w-2/3 mx-auto ">
               <select name="" id="" className="py-2 px-4 w-full mx-auto outline-none">
-                <option value="">Select</option>
+                <option value="" >Select</option>
                 <option value="">Employee ID</option>
                 <option value="">Project ID</option>
               </select>

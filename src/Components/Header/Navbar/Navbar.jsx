@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {GiHamburgerMenu} from "react-icons/gi"
-import Hamburger from '../../Dashboard/Hamburger.jsx'
+import { Components } from "../../../Imports/Components.js";
 const Navbar = () => {
   const [openHamburger, setOpenHamburger] = useState(false)
-   const handleOpenHamburger = ()=>{
-    if(openHamburger){
-      setOpenHamburger(false)
-    }
-   }
+  //  const handleOpenHamburger = ()=>{
+  //   if(openHamburger){
+  //     setOpenHamburger(false)
+  //   }
+  //  }
   return (
     <>
-      <nav className="container flex justify-between bg-transparent py-8 text-nowrap " onClick={handleOpenHamburger}>
+      <nav className="container flex justify-between bg-transparent py-8 text-nowrap " >
         <div className="">
           <span className="text-3xl font-bold text-yellow-600">OMS</span>
         </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
         {
           openHamburger&&(
             <div className="absolute top-14 right-2 z-20">
-                <Hamburger/>
+                <Components.Hamburger/>
             </div>
           )
         }

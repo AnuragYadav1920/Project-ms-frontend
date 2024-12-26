@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroSection from '../HeroSection/HeroSection.jsx'
+import {Components} from "../../Imports/Components.js"
 
 const Home = () => {
   return (
     <div className='container h-96 w-full'>
       <div>
-        <HeroSection/>
+        <Components.HeroSection/>
       </div>
     </div>
   )

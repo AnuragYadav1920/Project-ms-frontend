@@ -1,239 +1,226 @@
 import React from "react";
+import { IoMdMail } from "react-icons/io";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { TbMapPinCode } from "react-icons/tb";
+import { IoMdGlobe } from "react-icons/io";
 
 const Profile = () => {
+  const skills = [
+    "C++",
+    "Python",
+    "DSA",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React.js",
+    "Express.js",
+    "Node.js",
+    "MongoDB",
+    "SQL",
+  ];
   return (
     <>
-      <div>
-        <div className="backdrop-brightness-90 mt-4">
-          <div className="py-8 text-3xl text-slate-400 text-center font-thin">
-            My Profile
-          </div>
-          <div className="px-4">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400 font-thin">
+      <div className="employee-profile flex justify-between my-16">
+        {/* left section */}
+        <div className="left-section bg-slate-400 min-h-96 py-8 px-8">
+          <div className="my-4">
+            <div className="text-2xl font-semibold px-4 py-2">
               Personal Details :
             </div>
-            <div className="account-personal-details text-nowrap">
-              <ul className="p-8 backdrop-brightness-50 ">
-                <img
-                  src="../../images/photo.jpg"
-                  alt=""
-                  className=" w-40 h-40 mx-auto rounded-full"
-                />
-              </ul>
-              <ul className="px-8 py-4 flex flex-wrap justify-between ">
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600  ">Name : </span>{" "}
-                  Anurag Yadav
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin ">
-                  <span className="text-lg text-yellow-600 ">
-                    Date of Birth :{" "}
-                  </span>{" "}
-                  19 / 08 / 2000
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600 ">
-                    Father's Name :
-                  </span>{" "}
-                  Rakesh Kumar
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600 ">
-                    Mother's Name :
-                  </span>{" "}
-                  Neelam Devi
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600">
-                    Desingnation :
-                  </span>{" "}
-                  SDE 2
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="px-4 py-8 font-thin">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400">
-              Skills Specialization :
-            </div>
-            <div className="py-4 text-slate-400 w-2/3 mx-auto">
-              <div className="px-8 py-2 ">
-                <span className="text-yellow-600 text-lg">
-                  Technical skills : {" "}
-                </span>
-                C <span className="text-2xl text-yellow-600"> / </span>
-                C++ <span className="text-2xl text-yellow-600"> / </span>
-                HTML <span className="text-2xl text-yellow-600"> / </span>
-                CSS <span className="text-2xl text-yellow-600"> / </span>
-                Javascript <span className="text-2xl text-yellow-600"> / </span>
-                Tailwind CSS <span className="text-2xl text-yellow-600"> / </span>
-                ReactJS <span className="text-2xl text-yellow-600"> / </span>
-                NodeJS <span className="text-2xl text-yellow-600"> / </span>
-                Express <span className="text-2xl text-yellow-600"> / </span>
-                MonogoDB <span className="text-2xl text-yellow-600"> / </span>
-                SQL <span className="text-2xl text-yellow-600"> / </span>
-                etc.
+            <div className="flex flex-wrap-reverse justify-between py-6 px-4">
+              <div className="personal-details-basic text-nowrap">
+                <div className="flex gap-4 px-4 py-2">
+                  <div className="font-normal text-lg">Name : </div>
+                  <div className="font-thin text-md">Anurag Yadav</div>
+                </div>
+                <div className="flex gap-4 px-4 py-2">
+                  <div className="font-normal text-lg">Father's Name : </div>
+                  <div className="font-thin text-md">Rakesh Kumar</div>
+                </div>
+                <div className="flex gap-4 px-4 py-2">
+                  <div className="font-normal text-lg">Mother's Name : </div>
+                  <div className="font-thin text-md">Neelam Devi</div>
+                </div>
+                <div className="flex gap-4 px-4 py-2">
+                  <div className="font-normal text-lg">D O B : </div>
+                  <div className="font-thin text-md"> 19 / 08 / 2000</div>
+                </div>
+                <div className="flex gap-4 px-4 py-2">
+                  <div className="font-normal text-lg">Designation : </div>
+                  <div className="font-thin text-md"> Software Developer</div>
+                </div>
               </div>
-              <div className="px-8 py-2 ">
-                <span className="text-yellow-600 text-lg">Soft skills : </span>
-                Leadership <span className="text-2xl text-yellow-600">/</span>
-                Communication Skills
-                <span className="text-2xl text-yellow-600"> / </span>
-                etc.
+              <div className="personal-details-image shrink-0 ">
+                <div className="shrink-0 p-4">
+                  <img
+                    src="../images/photo.jpg"
+                    alt=""
+                    className="w-40 h-44 shrink-0 mx-auto border-8 border-slate-700"
+                  />
+                </div>
               </div>
-              <div></div>
             </div>
           </div>
-          <div className="px-4 py-8">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400 font-thin">
-              Experience Details :
-            </div>
-            <div className="py-4">
-              <table className="account-details-table w-3/4 mx-auto">
-                <thead>
-                  <tr className="bg-slate-600 border-y-2 border-slate-400">
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      Organization
-                    </th>
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      Duration
-                    </th>
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      Role
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Amazon Pvt Ltd.
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      3 years
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400">
-                      Junior Developer
-                    </td>
-                  </tr>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Google Pvt Ltd.
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      6 months
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Junior Developer
-                    </td>
-                  </tr>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Google Pvt Ltd.
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      6 months
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Junior Developer
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div className="px-4 py-8">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400 font-thin">
+          <div className="my-4 ">
+            <div className="text-2xl font-semibold px-4 py-2">
               Academic Details :
             </div>
-            <div className="py-4">
-              <table className="account-details-table w-3/4 mx-auto">
-                <thead>
-                  <tr className="bg-slate-600 border-y-2 border-slate-400">
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      University/ College Name
-                    </th>
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      Duration
-                    </th>
-                    <th className="py-2 font-thin text-lg text-yellow-600 border-x-2 border-slate-400">
-                      Specialization
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      FGIET, Raebareli
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      2020-24
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400">
-                      Computer Science Engineering
-                    </td>
-                  </tr>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      SJS PUBLIC SCHOOL, Unchahar
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      2017-18
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      Intermidiate
-                    </td>
-                  </tr>
-                  <tr className="bg-slate-950 border-2 border-slate-600">
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      SJS PUBLIC SCHOOL, Unchahar
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 border-x-2 border-slate-600">
-                      2015-16
-                    </td>
-                    <td className="py-1 font-thin text-md text-center text-gray-400 ">
-                      High School
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="px-4">
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    Feroze Gandhi Institute Of Engineering And Technology,
+                    Raebareli
+                  </div>
+                  <div className="font-thin text-md">
+                    Computer Science And Engineering
+                  </div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>Graduation :</div>
+                    <div>7.74 / 10</div>
+                  </div>
+                </div>
+                <div>2024</div>
+              </div>
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    S J S Public School Unchahar, Raebareli
+                  </div>
+                  <div className="font-thin text-md">Science</div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>Intermediate : </div>
+                    <div>80.8 %</div>
+                  </div>
+                </div>
+                <div>2018</div>
+              </div>
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    S J S Public School Unchahar, Raebareli
+                  </div>
+                  <div className="font-thin text-md">Science</div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>High School : </div>
+                    <div>10 / 10</div>
+                  </div>
+                </div>
+                <div>2016</div>
+              </div>
             </div>
           </div>
-          <div className="px-4 py-8">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400 font-thin">
+          <div className="my-4 ">
+            <div className="text-2xl font-semibold px-4 py-2">
+              Experience Details :
+            </div>
+            <div className="px-4">
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    Feroze Gandhi Institute Of Engineering And Technology,
+                    Raebareli
+                  </div>
+                  <div className="font-thin text-md">
+                    Computer Science And Engineering
+                  </div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>Graduation :</div>
+                    <div>7.74 / 10</div>
+                  </div>
+                </div>
+                <div>2024</div>
+              </div>
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    S J S Public School Unchahar, Raebareli
+                  </div>
+                  <div className="font-thin text-md">Science</div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>Intermediate : </div>
+                    <div>80.8 %</div>
+                  </div>
+                </div>
+                <div>2018</div>
+              </div>
+              <div className="flex justify-between px-4 py-2">
+                <div className="">
+                  <div className="text-lg font-normal">
+                    S J S Public School Unchahar, Raebareli
+                  </div>
+                  <div className="font-thin text-md">Science</div>
+                  <div className="flex gap-2 font-thin text-sm">
+                    <div>High School : </div>
+                    <div>10 / 10</div>
+                  </div>
+                </div>
+                <div>2016</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* right section */}
+        <div className="right-section bg-slate-600 min-h-96 py-8 px-8">
+          <div className="my-4">
+            <div className="text-2xl font-semibold px-4 py-2">Skills:</div>
+            <div className="px-4 flex justify-start py-2">
+              <div className="flex flex-wrap gap-2 px-4 py-2">
+                {skills.map((skill, index) => (
+                  <div key={index} className="skill-box text-md font-thin py-1 px-6 bg-slate-700 rounded-full">{skill}</div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="my-4">
+            <div className="text-2xl font-semibold px-4 py-2">
               Contact Details :
             </div>
-            <div className="font-thin">
-              <ul className=" account-contact-details px-8 py-4 flex justify-center gap-12 ">
-                <li className="py-2 text-slate-400 text-md ">
-                  <span className="text-lg text-yellow-600 ">Email :</span>{" "}
-                  anurag192000@gmail.com
-                </li>
-                <li className="py-2 text-slate-400 text-md ">
-                  <span className="text-lg text-yellow-600 ">Mobile No :</span>{" "}
+            <div className="px-4 flex gap-2 justify-start flex-wrap py-2">
+              <div className="flex gap-2 px-4">
+                <div className="text-xl content-center">
+                  <IoMdMail />
+                </div>
+                <div className="text-md font-thin content-center">
+                  anurag@gmail.com
+                </div>
+              </div>
+              <div className="flex gap-2 px-4">
+                <div className="text-xl content-center">
+                  <FaPhoneSquareAlt />
+                </div>
+                <div className="text-md font-thin content-center">
                   6387208361
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="px-4 py-8 mb-10">
-            <div className="account-details-heading py-4 px-8 text-lg text-slate-400 font-thin">
+          <div className="my-4">
+            <div className="text-2xl font-semibold px-4 py-2">
               Address Details :
             </div>
-            <div className="account-personal-details flex justify-center gap-8 text-nowrap">
-              <ul className="px-8 py-4 ">
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600  ">Location : </span>{" "}
-                  HN-136, Chheechhemau
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600  "> Pincode : </span>
-                  229204
-                </li>
-                <li className="py-2 text-slate-400 text-md font-thin">
-                  <span className="text-lg text-yellow-600  "> Country : </span>
-                  India
-                </li>
-              </ul>
+            <div className="px-4 flex flex-wrap gap-2 justify-start py-2">
+              <div className="flex gap-2 px-4 ">
+                <div className="text-xl content-center">
+                  <FaLocationDot />
+                </div>
+                <div className="text-md font-thin content-center">
+                  Raebareli
+                </div>
+              </div>
+              <div className="flex gap-2 px-4">
+                <div className="text-xl content-center">
+                  <TbMapPinCode />
+                </div>
+                <div className="text-md font-thin content-center">229204</div>
+              </div>
+              <div className="flex gap-2 px-4">
+                <div className="text-xl content-center">
+                  <IoMdGlobe />
+                </div>
+                <div className="text-md font-thin content-center">India</div>
+              </div>
             </div>
           </div>
         </div>

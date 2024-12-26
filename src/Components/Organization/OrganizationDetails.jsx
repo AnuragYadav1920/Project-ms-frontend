@@ -1,6 +1,6 @@
 import React from "react";
 
-const OrgDetails = () => {
+const OrganizationDetails = () => {
   return (
     <>
       <div className="mt-12 min-h-96 backdrop-brightness-95 text-md font-thin relative">
@@ -91,4 +91,4 @@ const OrgDetails = () => {
   );
 };
 
-export default OrgDetails;
+export default OrganizationDetails;

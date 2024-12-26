@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import OrgSign from "../../Components/SignIn/OrgSign.jsx";
-import UserSign from "../../Components/SignIn/UserSign.jsx";
+import {Components} from "../../Imports/Components.js"
+
 
 const Login = () => {
   const [loginType, setLoginType] = useState(false);
@@ -45,7 +45,7 @@ const Login = () => {
             )}
           </div>
           {
-            choosenType!=null && choosenType==='User'?<div className="mt-8"><UserSign/></div>:<div className="mt-8"><OrgSign/></div>
+            choosenType!=null && choosenType==='User'?<div className="mt-8"><Components.EmployeeSignIn/></div>:<div className="mt-8"><Components.OrganizationSignIn/></div>
           }
         </div>
       </div>

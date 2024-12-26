@@ -1,21 +1,13 @@
 import React, { useEffect, useState } from "react";
-import SideDashboard from "../../Components/Dashboard/SideDashboard.jsx";
 import { NavLink, Outlet } from "react-router-dom";
-import { RiMenu3Fill } from "react-icons/ri";
 const Account = () => {
-  const [admin, isAdmin] = useState(true);
-  const [openSideDashboard, setOpenSideDashboard] = useState(false);
+  const [admin, isAdmin] = useState(false);
 
-  const handleOpenSideBar = () => {
-    if (openSideDashboard) {
-      setOpenSideDashboard(false);
-    }
-  };
 
   useEffect(() => {}, [isAdmin]);
   return (
     <>
-      <div className="container" onClick={handleOpenSideBar}>
+      <div className="container" >
         <div className="relative">
           <div className="text-md font-thin text-slate-400 my-4 ">
             Dashboard /
@@ -64,17 +56,6 @@ const Account = () => {
               <NavLink to="search" className="px-4 py-2 rounded-full hover:bg-white hover:text-yellow-600">
                 Search
               </NavLink>
-            </div>
-          )}
-          <ul className="account-details-menu p-2 backdrop-brightness-90 inline-block">
-            <RiMenu3Fill
-              className="text-xl text-yellow-600 font-bold  "
-              onClick={() => setOpenSideDashboard(!openSideDashboard)}
-            />
-          </ul>
-          {openSideDashboard && (
-            <div className="absolute top-20 z-20 ">
-              <SideDashboard />
             </div>
           )}
         </div>

@@ -1,37 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home.jsx";
-import About from "./Pages/About/About.jsx";
-import Contact from "./Pages/Contact/Contact.jsx";
-import Services from "./Pages/Services/Services.jsx";
-import Navbar from "./Components/Header/Navbar/Navbar.jsx";
-import Login from "./Pages/Authentication/Login.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
-import Account from "./Pages/Account/Account.jsx";
-import Application from "./Components/Employee/Application.jsx";
-import Profile from "./Components/Employee/Profile.jsx";
-import Tasks from "./Components/Employee/Tasks.jsx";
-import TrackApp from "./Components/Employee/TrackApp.jsx";
-import EmpReg from "./Components/Organization/EmpReg.jsx";
-import OrgDetails from "./Components/Organization/OrgDetails.jsx";
-import ProjectReg from "./Components/Organization/ProjectReg.jsx";
-import Projects from "./Components/Organization/Projects.jsx";
-import Search from "./Components/Organization/Search.jsx";
-import AcademicDetails from "./Components/Organization/EmployeeRegistration/AcademicDetails.jsx";
-import AddressDetails from "./Components/Organization/EmployeeRegistration/AddressDetails.jsx";
-import ContactDetails from "./Components/Organization/EmployeeRegistration/ContactDetails.jsx";
-import ExperienceDetails from "./Components/Organization/EmployeeRegistration/ExperienceDetails.jsx";
-import PersonalDetails from "./Components/Organization/EmployeeRegistration/PersonalDetails.jsx";
-import SkillsDetails from "./Components/Organization/EmployeeRegistration/SkillsDetails.jsx";
-import ProjectDetails from "./Components/Organization/ProjectRegistration/ProjectDetails.jsx";
-import ProjectDescription from "./Components/Organization/ProjectRegistration/ProjectDescription.jsx";
-import ProjectTimeline from "./Components/Organization/ProjectRegistration/ProjectTimeline.jsx";
-import ProjectTeam from "./Components/Organization/ProjectRegistration/ProjectTeam.jsx";
-import ProjectResources from "./Components/Organization/ProjectRegistration/ProjectResources.jsx";
-import ProjectStatus from "./Components/Organization/ProjectRegistration/ProjectStatus.jsx";
-import Planning from "./Components/Organization/AllProjects/Planning.jsx";
-import Active from "./Components/Organization/AllProjects/Active.jsx";
-import Completed from "./Components/Organization/AllProjects/Completed.jsx";
+import {Components} from "../src/Imports/Components.js"
+import{ Pages} from "../src/Imports/Pages.js"
 
 const App = () => {
   return (
@@ -42,51 +12,49 @@ const App = () => {
           v7_startTransition: true,
         }}
       >
-        <Navbar />
+        <Components.Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Account />}>
+          <Route path="/" element={<Pages.Home />} />
+          <Route path="/about" element={<Pages.About />} />
+          <Route path="/services" element={<Pages.Services />} />
+          <Route path="/contact" element={<Pages.Contact />} />
+          <Route path="/login" element={<Pages.Login />} />
+          <Route path="/dashboard" element={<Pages.Account />}>
             {/* <Route index element={<Profile/>}/> */}
-            <Route path="my-profile" element={<Profile />} />
-            <Route path="my-tasks" element={<Tasks />} />
-            <Route path="my-leaves" element={<Application />} />
-            <Route path="my-applications" element={<TrackApp />} />
-            <Route path="organization-details" element={<OrgDetails />} />
-            <Route path="employee-registration" element={<EmpReg />}>
-              <Route index element={<PersonalDetails />} />
-              <Route path="personal-details" element={<PersonalDetails />} />
-              <Route path="academic-details" element={<AcademicDetails />} />
-              <Route path="contact-details" element={<ContactDetails />} />
+            <Route path="my-profile" element={<Components.Profile />} />
+            <Route path="my-tasks" element={<Components.Tasks />} />
+            <Route path="my-leaves" element={<Components.Application />} />
+            <Route path="my-applications" element={<Components.TrackApplication />}/>            
+            <Route path="organization-details" element={<Components.OrganizationDetails />} />
+            <Route path="employee-registration" element={<Components.EmployeeRegistration />}>
+              <Route index element={<Components.PersonalDetails />} />
+              <Route path="personal-details" element={<Components.PersonalDetails />} />
+              <Route path="academic-details" element={<Components.AcademicDetails />} />
+              <Route path="contact-details" element={<Components.ContactDetails />} />
               <Route
                 path="experience-details"
-                element={<ExperienceDetails />}
+                element={<Components.ExperienceDetails />}
               />
-              <Route path="address-details" element={<AddressDetails />} />
-              <Route path="skills-details" element={<SkillsDetails />} />
+              <Route path="address-details" element={<Components.AddressDetails />} />
+              <Route path="skills-details" element={<Components.SkillsDetails />} />
             </Route>
-            <Route path="project-registration" element={<ProjectReg />}>
-              <Route index element={<ProjectDetails />} />
-              <Route path="details" element={<ProjectDetails />} />
-              <Route path="description" element={<ProjectDescription />} />
-              <Route path="timeline" element={<ProjectTimeline />} />
-              <Route path="team-information" element={<ProjectTeam />} />
-              <Route path="resources" element={<ProjectResources />} />
-              <Route path="status" element={<ProjectStatus />} />
+            <Route path="project-registration" element={<Components.ProjectRegistration />}>
+              <Route index element={<Components.ProjectDetails />} />
+              <Route path="basic-details" element={<Components.ProjectDetails />} />
+              <Route path="description" element={<Components.ProjectDescription />} />
+              <Route path="timeline" element={<Components.ProjectTimeline />} />
+              <Route path="team-information" element={<Components.ProjectTeam />} />
+              <Route path="resources" element={<Components.ProjectResources />} />
+              <Route path="status" element={<Components.ProjectStatus />} />
             </Route>
-            <Route path="projects" element={<Projects />}>
-              <Route index element={<Planning/>}/>
-              <Route path="planning" element={<Planning />} />
-              <Route path="active" element={<Active />} />
-              <Route path="completed" element={<Completed />} />
+            <Route path="projects" element={<Components.Projects />}>
+              <Route path="planning" element={<Components.FilteredProjects />} />
             </Route>
-            <Route path="search" element={<Search />} />
+            <Route path="search" element={<Components.Search />} />
           </Route>
+          <Route path="view-application" element={<Components.ViewApplication/>}/>
         </Routes>
-        <Footer />
+        <Components.Footer />
       </BrowserRouter>
     </>
   );
