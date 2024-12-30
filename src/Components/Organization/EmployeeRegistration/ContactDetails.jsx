@@ -15,6 +15,7 @@ const ContactDetails = () => {
                 type="text"
                 placeholder="enter the email"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -25,6 +26,7 @@ const ContactDetails = () => {
                 type="text"
                 placeholder="enter the phone no"
                 className="input"
+                required
               />
             </div>
           </div>

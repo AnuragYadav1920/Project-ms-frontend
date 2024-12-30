@@ -15,6 +15,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="Address Line 1"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -25,6 +26,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="Address Line 2"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -35,6 +37,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="City"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -45,6 +48,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="State"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -55,6 +59,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="Pincode"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -65,6 +70,7 @@ const AddressDetails = () => {
                 type="text"
                 placeholder="Country"
                 className="input"
+                required
               />
             </div>
           </div>

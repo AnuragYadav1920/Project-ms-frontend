@@ -44,7 +44,6 @@ const App = () => {
               <Route path="description" element={<Components.ProjectDescription />} />
               <Route path="timeline" element={<Components.ProjectTimeline />} />
               <Route path="team-information" element={<Components.ProjectTeam />} />
-              <Route path="resources" element={<Components.ProjectResources />} />
               <Route path="status" element={<Components.ProjectStatus />} />
             </Route>
             <Route path="projects" element={<Components.Projects />}>

@@ -30,10 +30,10 @@ const ProjectRegistration = () => {
         </div>
         <div className="employee-registration-details-links flex flex-wrap gap-4 text-center text-nowrap text-slate-400 font-thin py-8 justify-center">
           <NavLink
-            to="details"
+            to="basic-details"
             className="px-4 py-2 rounded-full min-w-36 hover:bg-white hover:text-yellow-600"
           >
-            Details
+            Basic Details
           </NavLink>
           <NavLink
             to="description"
@@ -51,13 +51,7 @@ const ProjectRegistration = () => {
             to="team-information"
             className="px-4 py-2 rounded-full min-w-36 hover:bg-white hover:text-yellow-600"
           >
-            Team
-          </NavLink>
-          <NavLink
-            to="resources"
-            className="px-4 py-2 rounded-full min-w-36 hover:bg-white hover:text-yellow-600"
-          >
-            Resources
+            Team Members
           </NavLink>
           <NavLink
             to="status"

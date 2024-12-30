@@ -5,9 +5,8 @@ const ProjectTimeline = () => {
     <>
     <div>
         <form action="" className="text-md text-slate-400 font-thin py-16 px-2 bg-slate-700">
-          <div className="employee-reg-form-main-div
-          flex flex-wrap gap-4 justify-center ">
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
+          <div className="flex justify-center gap-4 flex-wrap">
+            <div className="">
               <label htmlFor="Name" className="input-label">
                 Start Date :{" "}
               </label>
@@ -17,7 +16,7 @@ const ProjectTimeline = () => {
                 className="input"
               />
             </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
+            <div className="">
               <label htmlFor="Name" className="input-label">
                 End Date :{" "}
               </label>
@@ -27,30 +26,11 @@ const ProjectTimeline = () => {
                 className="input"
               />
             </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
-                Milestone 1 :{" "}
-              </label>
-              <input
-                type="date"
-                placeholder="Milestone 1"
-                className="input"
-              />
-            </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
-                Milestone 2 :{" "}
-              </label>
-              <input
-                type="date"
-                placeholder="Milestone 2"
-                className="input"
-              />
-            </div>
           </div>
-          <div className="text-center py-16 space-x-4">
-            <button className="px-6 py-2 bg-gray-500 text-white">Cancel</button>
-            <button className="px-6 py-2 bg-blue-400 text-white">Save</button>
+          <div className="text-center m-6">
+            <button className="min-w-24 py-2 text-white bg-blue-400">
+              Save
+            </button>
           </div>
         </form>
       </div>

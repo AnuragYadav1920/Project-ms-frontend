@@ -16,7 +16,6 @@ import PersonalDetails from "../Components/Organization/EmployeeRegistration/Per
 import SkillsDetails from "../Components/Organization/EmployeeRegistration/SkillsDetails.jsx"
 import ProjectDescription from "../Components/Organization/ProjectRegistration/ProjectDescription.jsx"
 import ProjectDetails from "../Components/Organization/ProjectRegistration/ProjectDetails.jsx"
-import ProjectResources from "../Components/Organization/ProjectRegistration/ProjectResources.jsx"
 import ProjectStatus from "../Components/Organization/ProjectRegistration/ProjectStatus.jsx"
 import ProjectTeam from "../Components/Organization/ProjectRegistration/ProjectTeam.jsx"
 import ProjectTimeline from "../Components/Organization/ProjectRegistration/ProjectTimeline.jsx"
@@ -50,7 +49,6 @@ export const Components = {
     SkillsDetails,
     ProjectDescription,
     ProjectDetails,
-    ProjectResources,
     ProjectStatus,
     ProjectTeam,
     ProjectTimeline,

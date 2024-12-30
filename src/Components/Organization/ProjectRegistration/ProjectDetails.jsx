@@ -5,10 +5,9 @@ const ProjectDetails = () => {
     <>
     <div>
         <form action="" className="text-md text-slate-400 font-thin py-16 px-2 bg-slate-700">
-          <div className="employee-reg-form-main-div
-          flex flex-wrap gap-4 justify-center ">
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
+          <div className="project-details">
+            <div className="">
+              <label htmlFor="name" className="input-label">
                 Name / Title :{" "}
               </label>
               <input
@@ -17,18 +16,8 @@ const ProjectDetails = () => {
                 className="input"
               />
             </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
-                Project Id :{" "}
-              </label>
-              <input
-                type="text"
-                placeholder="Unique Id"
-                className="input"
-              />
-            </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
+            <div className="">
+              <label htmlFor="category" className="input-label">
                 Category :{" "}
               </label>
               <input
@@ -37,8 +26,8 @@ const ProjectDetails = () => {
                 className="input"
               />
             </div>
-            <div className="employee-reg-form-div space-y-2 w-1/3 ">
-              <label htmlFor="Name" className="input-label">
+            <div className="">
+              <label htmlFor="owner" className="input-label">
                 Owner :{" "}
               </label>
               <input
@@ -47,10 +36,21 @@ const ProjectDetails = () => {
                 className="input"
               />
             </div>
+            <div className="">
+              <label htmlFor="budget" className="input-label">
+                Budget :{" "}
+              </label>
+              <input
+                type="text"
+                placeholder="Budget in $"
+                className="input"
+              />
+            </div>
           </div>
-          <div className="text-center py-16 space-x-4">
-            <button className="px-6 py-2 bg-gray-500 text-white">Cancel</button>
-            <button className="px-6 py-2 bg-blue-400 text-white">Save</button>
+          <div className="text-center m-6">
+            <button className="min-w-24 py-2 text-white bg-blue-400">
+              Save
+            </button>
           </div>
         </form>
       </div>

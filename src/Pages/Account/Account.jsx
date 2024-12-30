@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 const Account = () => {
-  const [admin, isAdmin] = useState(false);
+  const [admin, isAdmin] = useState(true);
 
 
   useEffect(() => {}, [isAdmin]);
@@ -30,7 +30,7 @@ const Account = () => {
                 to="my-leaves"
                 className="px-4 py-2 rounded-full hover:bg-white hover:text-yellow-600"
               >
-                Apply Leave
+                Application
               </NavLink>
               <NavLink
                 to="my-applications"

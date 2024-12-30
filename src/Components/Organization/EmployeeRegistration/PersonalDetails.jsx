@@ -15,13 +15,14 @@ const Personaldetails = () => {
                 type="text"
                 placeholder="enter the name"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
               <label htmlFor="Name" className="input-label">
                 Date of Birth :{" "}
               </label>
-              <input type="date" className="input" />
+              <input type="date" className="input" required/>
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
               <label htmlFor="Name" className="input-label">
@@ -31,6 +32,7 @@ const Personaldetails = () => {
                 type="text"
                 placeholder="enter father's name"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -41,6 +43,7 @@ const Personaldetails = () => {
                 type="text"
                 placeholder="enter mother's name"
                 className="input"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -51,6 +54,7 @@ const Personaldetails = () => {
                 type="file"
                 placeholder="enter the name"
                 className="input bg-white"
+                required
               />
             </div>
             <div className="employee-reg-form-div space-y-2 w-1/3 ">
@@ -61,6 +65,7 @@ const Personaldetails = () => {
                 type="text"
                 placeholder="enter designation"
                 className="input"
+                required
               />
             </div>
           </div>

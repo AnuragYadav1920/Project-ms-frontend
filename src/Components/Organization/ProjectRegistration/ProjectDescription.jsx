@@ -3,28 +3,28 @@ import React from "react";
 const ProjectDescription = () => {
   return (
     <>
-      <div>
-        <form
-          action=""
-          className="text-md text-slate-400 font-thin py-16 px-2 bg-slate-700"
-        >
-          <div className="employee-reg-form-div space-y-2 w-2/3 mx-auto ">
-            <label htmlFor="Name" className="input-label">
-              Description :{" "}
+      <div className="py-8 text-md font-thin">
+        <div className="bg-slate-700 py-8 min-h-96">
+          <div className="application-project-upload">
+            <label htmlFor="" className="">
+              <input
+                type="file"
+                className="py-4 px-8 border-2 border-slate-400 w-full rounded-full text-lg text-slate-400"
+              />
             </label>
-            <textarea
-              name=""
-              id=""
-              className="input"
-              placeholder="Describe about project"
-              rows={10}
-            ></textarea>
           </div>
-          <div className="text-center py-16 space-x-4">
-            <button className="px-6 py-2 bg-gray-500 text-white">Cancel</button>
-            <button className="px-6 py-2 bg-blue-400 text-white">Save</button>
+          <div className="text-center m-6">
+            <button className="min-w-24 py-2 text-white bg-blue-400">
+              Save
+            </button>
           </div>
-        </form>
+          <div>
+            <p className="text-center py-1 text-slate-400">
+              <span className="text-red-600">Note :</span> File should be in
+              PDF only.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
